@@ -11,216 +11,199 @@
 </head>
 
 <body>
-    <main>
-        <!-- Desktop Icons -->
-        <div class="desktop-icons">
-            <div class="icon" data-target="about-window" tabindex="0">
-                <img src="assets/images/icons/notepad-icon.png" alt="About" class="icon-img-tag">
-                <div class="icon-text">About.txt</div>
+    <!-- Desktop Icons -->
+    <div class="desktop-icons">
+        <div class="icon" data-target="about-window" tabindex="0">
+            <img src="assets/images/icons/notepad-icon.png" alt="About" class="icon-img-tag">
+            <div class="icon-text">About.txt</div>
+        </div>
+        <div class="icon" data-target="projects-window" tabindex="0">
+            <img src="assets/images/icons/folder-icon.png" alt="Projects" class="icon-img-tag">
+            <div class="icon-text">Projects</div>
+        </div>
+        <div class="icon" data-target="contact-window" tabindex="0">
+            <img src="assets/images/icons/phone-icon.png" alt="Contact" class="icon-img-tag">
+            <div class="icon-text">Contact.exe</div>
+        </div>
+        <div class="icon" data-target="experience-window" tabindex="0">
+            <img src="assets/images/icons/notepad-icon.png" alt="Experience" class="icon-img-tag">
+            <div class="icon-text">Experience.doc</div>
+        </div>
+    </div>
+
+    <!-- Jendela 1: Tentang (Notepad Style) -->
+    <div class="window hidden" id="about-window">
+        <div class="title-bar">
+            <div class="title-bar-text">About.txt - Notepad</div>
+            <button aria-label="Close" class="close-btn" data-target="about-window">X</button>
+        </div>
+        <div class="window-body text-body">
+            <p>I’m a frontend-focused Software Engineer with 6+ years of experience building fast, accessible, and
+                maintainable web apps. My core stack centers on .NET 10 Blazor (WASM/Server) and MAUI for hybrid
+                experiences, plus modern JS frameworks like Angular and Vue, and Node.js on the back end when needed.
+                <br><br>
+                I’ve shipped data-heavy UIs, role-based auth flows, and responsive layouts, optimized bundle size and
+                loading times, and set up CI/CD and Dockerized deployments for reliable releases. I enjoy collaborating
+                across design and product to turn ideas into smooth, production-ready experiences.
+            </p>
+        </div>
+    </div>
+
+    <!-- Jendela 2: Proyek (Folder Style) -->
+    <div class="window hidden" id="projects-window">
+        <div class="title-bar">
+            <div class="title-bar-text">C:\My_Projects</div>
+            <button aria-label="Close" class="close-btn" data-target="projects-window">X</button>
+        </div>
+        <div class="window-body folder-body">
+            <div class="file-item">
+                <img src="assets/images/wallpaper/logo-bca.svg" alt="BCA Logo" class="file-icon-img">
+                <span>myCore BCA</span>
             </div>
-            <div class="icon" data-target="projects-window" tabindex="0">
-                <img src="assets/images/icons/folder-icon.png" alt="Projects" class="icon-img-tag">
-                <div class="icon-text">Projects</div>
+            <div class="file-item">
+                <img src="assets/images/wallpaper/logo-bca.svg" alt="BCA Logo" class="file-icon-img">
+                <span>myPartner BCA</span>
             </div>
-            <div class="icon" data-target="contact-window" tabindex="0">
-                <img src="assets/images/icons/phone-icon.png" alt="Contact" class="icon-img-tag">
-                <div class="icon-text">Contact.exe</div>
+            <div class="file-item">
+                <img src="assets/images/wallpaper/logo-mandiri.svg" alt="Mandiri Logo" class="file-icon-img">
+                <span>Livin KPR</span>
             </div>
-            <div class="icon" data-target="experience-window" tabindex="0">
-                <img src="assets/images/icons/notepad-icon.png" alt="Experience" class="icon-img-tag">
-                <div class="icon-text">Experience.doc</div>
+            <div class="file-item">
+                <img src="assets/images/wallpaper/logo-mandiri.svg" alt="Mandiri Logo" class="file-icon-img">
+                <span>Livin Auto</span>
+            </div>
+            <div class="file-item">
+                <img src="assets/images/wallpaper/logo-mandiri.svg" alt="Mandiri Logo" class="file-icon-img">
+                <span>Livin Merchant</span>
+            </div>
+            <div class="file-item">
+                <img src="assets/images/wallpaper/logo-grc.svg" alt="Mandiri Logo" class="file-icon-img">
+                <span>ERP GRC Board</span>
             </div>
         </div>
+    </div>
 
-        <!-- Jendela 1: Tentang (Notepad Style) -->
-        <div class="window hidden" id="about-window">
-            <div class="title-bar">
-                <div class="title-bar-text">About.txt - Notepad</div>
-                <button aria-label="Close" class="close-btn" data-target="about-window">X</button>
+    <!-- Jendela 3: Kontak (Dialog Style) -->
+    <div class="window hidden" id="contact-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Contact.exe</div>
+            <button aria-label="Close" class="close-btn" data-target="contact-window">X</button>
+        </div>
+        <div class="window-body dialog-body">
+            <p style="margin-bottom: 15px;">Choose communication channel:</p>
+            <div class="contact-links"
+                style="display: flex; flex-direction: column; gap: 10px; text-align: left; background: #fff; padding: 10px; border: 2px inset #dfdfdf; margin-bottom: 15px;">
+                <a href="mailto:vikriramdani88@gmail.com" class="contact-link"
+                    style="color: #000; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                    <img src="assets/images/icons/gmail-icon.png" alt="Gmail"
+                        style="width: 20px; height: 20px; object-fit: contain;"> Gmail
+                </a>
+                <a href="https://wa.me/081313498520" target="_blank" class="contact-link"
+                    style="color: #000; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                    <img src="assets/images/icons/wa-icon.png" alt="WhatsApp"
+                        style="width: 20px; height: 20px; object-fit: contain;"> WhatsApp
+                </a>
+                <a href="https://www.linkedin.com/in/vikri-ramdhani-619b16164/" target="_blank" class="contact-link"
+                    style="color: #000; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                    <img src="assets/images/icons/linkedin-icon.png" alt="LinkedIn"
+                        style="width: 20px; height: 20px; object-fit: contain;"> LinkedIn
+                </a>
             </div>
-            <div class="window-body text-body">
-                <p>I’m a frontend-focused Software Engineer with 6+ years of experience building fast, accessible, and
-                    maintainable web apps. My core stack centers on .NET 10 Blazor (WASM/Server) and MAUI for hybrid
-                    experiences, plus modern JS frameworks like Angular and Vue, and Node.js on the back end when
-                    needed.
-                    <br><br>
-                    I’ve shipped data-heavy UIs, role-based auth flows, and responsive layouts, optimized bundle size
-                    and
-                    loading times, and set up CI/CD and Dockerized deployments for reliable releases. I enjoy
-                    collaborating
-                    across design and product to turn ideas into smooth, production-ready experiences.
-                </p>
+            <button class="win-btn close-btn-shortcut" data-target="contact-window">Close</button>
+        </div>
+    </div>
+
+    <!-- Jendela 4: Experience -->
+    <div class="window hidden" id="experience-window" style="width: 450px; max-width: 95vw;">
+        <div class="title-bar">
+            <div class="title-bar-text">Experience.doc - WordPad</div>
+            <button aria-label="Close" class="close-btn" data-target="experience-window">X</button>
+        </div>
+        <div class="window-body text-body"
+            style="max-height: 400px; height: 60vh; overflow-y: auto; overflow-x: hidden; padding-right: 15px;">
+            <p style="margin-bottom: 5px;"><strong>Software Engineer</strong><br>GRC Board – Jakarta, Indonesia
+                <br><span style="color: #555;">05/2025 – Current</span>
+            </p>
+            <ul style="margin-left: 20px; font-size: 0.85rem; margin-bottom: 15px;">
+                <li>Architected and developed ERP application using MAUI Blazor Hybrid, leveraging a single codebase to
+                    deliver a consistent user experience across Android, iOS, Windows, and macOS.</li>
+                <li>Develop modular UI components using Razor and CSS/Sass, ensuring the ERP interface remained
+                    responsive and accessible across various device form factors.</li>
+                <li>R&D on the MAUI framework to solve complex performance bottlenecks and hardware integration
+                    challenges for enterprise users.</li>
+                <li>Collaborated with back-end teams to consume RESTful APIs, ensuring secure and real-time data
+                    synchronization for critical business modules.</li>
+            </ul>
+
+            <p style="margin-bottom: 5px;"><strong>Software Engineer</strong><br>Bank Mandiri – Jakarta, Indonesia
+                <br><span style="color: #555;">06/2023 - 05/2025</span>
+            </p>
+            <ul style="margin-left: 20px; font-size: 0.85rem; margin-bottom: 15px;">
+                <li>Develop front-end interfaces for flagship financial products including Livin KPR and Livin Autoloan,
+                    focusing on user retention and smooth application workflows.</li>
+                <li>Optimized API integration between the front-end and back-end services, reducing latency and
+                    improving the overall responsiveness of the mobile-web hybrid environment.</li>
+                <li>Develop a dedicated web application to support the Livin Merchant Android app, utilizing Asp.Net Web
+                    Form and Vanilla JS to manage merchant app features and analytics.</li>
+            </ul>
+
+            <p style="margin-bottom: 5px;"><strong>Front End Developer</strong><br>NTT Indonesia Technology – Jakarta,
+                Indonesia <br><span style="color: #555;">11/2018 – 10/2022</span></p>
+            <ul style="margin-left: 20px; font-size: 0.85rem; margin-bottom: 15px;">
+                <li>Develop responsive front-end architectures project myCore Bca and myPartner Bca using the Angular
+                    framework, successfully translating complex UI/UX designs into high-performance, production-ready
+                    code.</li>
+                <li>Streamlined data flow by collaborating with back-end teams to integrate UI components with secure
+                    APIs and databases, ensuring seamless synchronization with the Bank BCA ecosystem.</li>
+                <li>Utilized HTML, SCSS, and TypeScript to create visually appealing and responsive web pages that met
+                    client requirements.</li>
+            </ul>
+
+            <p style="margin-bottom: 5px;"><strong>Front End Developer</strong><br>Tujuh Sembilan, Bandung, Indonesia
+                <br><span style="color: #555;">05/2018 – 10/2018</span>
+            </p>
+            <ul style="margin-left: 20px; font-size: 0.85rem; margin-bottom: 10px;">
+                <li>Bootcamp about understanding algorithms, database relations, java programing language and Angular
+                    Framework.</li>
+                <li>Participate in working on the Human resource management system project of PT. Tujuh Sembilan</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Start Menu -->
+    <div id="start-menu" class="hidden">
+        <div class="start-menu-sidebar">
+            <span>Windows 95</span>
+        </div>
+        <div class="start-menu-items">
+            <div class="menu-item" data-target="about-window">
+                <img src="assets/images/icons/notepad-icon.png" alt="About" class="menu-icon-img">
+                <span>About.txt</span>
+            </div>
+            <div class="menu-item" data-target="projects-window">
+                <img src="assets/images/icons/folder-icon.png" alt="Projects" class="menu-icon-img">
+                <span>Programs</span>
+            </div>
+            <div class="menu-item" data-target="contact-window">
+                <img src="assets/images/icons/phone-icon.png" alt="Contact" class="menu-icon-img">
+                <span>Contact.exe</span>
+            </div>
+            <div class="menu-item" data-target="experience-window">
+                <img src="assets/images/icons/notepad-icon.png" alt="Experience" class="menu-icon-img">
+                <span>Experience.doc</span>
+            </div>
+            <hr class="menu-separator">
+            <div class="menu-item" id="menu-shutdown">
+                <div class="menu-icon">⏻</div>
+                <span>Shut Down...</span>
             </div>
         </div>
+    </div>
 
-        <!-- Jendela 2: Proyek (Folder Style) -->
-        <div class="window hidden" id="projects-window">
-            <div class="title-bar">
-                <div class="title-bar-text">C:\My_Projects</div>
-                <button aria-label="Close" class="close-btn" data-target="projects-window">X</button>
-            </div>
-            <div class="window-body folder-body">
-                <div class="file-item">
-                    <img src="assets/images/wallpaper/logo-bca.svg" alt="BCA Logo" class="file-icon-img">
-                    <span>myCore BCA</span>
-                </div>
-                <div class="file-item">
-                    <img src="assets/images/wallpaper/logo-bca.svg" alt="BCA Logo" class="file-icon-img">
-                    <span>myPartner BCA</span>
-                </div>
-                <div class="file-item">
-                    <img src="assets/images/wallpaper/logo-mandiri.svg" alt="Mandiri Logo" class="file-icon-img">
-                    <span>Livin KPR</span>
-                </div>
-                <div class="file-item">
-                    <img src="assets/images/wallpaper/logo-mandiri.svg" alt="Mandiri Logo" class="file-icon-img">
-                    <span>Livin Auto</span>
-                </div>
-                <div class="file-item">
-                    <img src="assets/images/wallpaper/logo-mandiri.svg" alt="Mandiri Logo" class="file-icon-img">
-                    <span>Livin Merchant</span>
-                </div>
-                <div class="file-item">
-                    <img src="assets/images/wallpaper/logo-grc.svg" alt="Mandiri Logo" class="file-icon-img">
-                    <span>ERP GRC Board</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Jendela 3: Kontak (Dialog Style) -->
-        <div class="window hidden" id="contact-window">
-            <div class="title-bar">
-                <div class="title-bar-text">Contact.exe</div>
-                <button aria-label="Close" class="close-btn" data-target="contact-window">X</button>
-            </div>
-            <div class="window-body dialog-body">
-                <p style="margin-bottom: 15px;">Choose communication channel:</p>
-                <div class="contact-links"
-                    style="display: flex; flex-direction: column; gap: 10px; text-align: left; background: #fff; padding: 10px; border: 2px inset #dfdfdf; margin-bottom: 15px;">
-                    <a href="mailto:vikriramdani88@gmail.com" class="contact-link"
-                        style="color: #000; text-decoration: none; display: flex; align-items: center; gap: 8px;">
-                        <img src="assets/images/icons/gmail-icon.png" alt="Gmail"
-                            style="width: 20px; height: 20px; object-fit: contain;"> Gmail
-                    </a>
-                    <a href="https://wa.me/081313498520" target="_blank" class="contact-link"
-                        style="color: #000; text-decoration: none; display: flex; align-items: center; gap: 8px;">
-                        <img src="assets/images/icons/wa-icon.png" alt="WhatsApp"
-                            style="width: 20px; height: 20px; object-fit: contain;"> WhatsApp
-                    </a>
-                    <a href="https://www.linkedin.com/in/vikri-ramdhani-619b16164/" target="_blank" class="contact-link"
-                        style="color: #000; text-decoration: none; display: flex; align-items: center; gap: 8px;">
-                        <img src="assets/images/icons/linkedin-icon.png" alt="LinkedIn"
-                            style="width: 20px; height: 20px; object-fit: contain;"> LinkedIn
-                    </a>
-                </div>
-                <button class="win-btn close-btn-shortcut" data-target="contact-window">Close</button>
-            </div>
-        </div>
-
-        <!-- Jendela 4: Experience -->
-        <div class="window hidden" id="experience-window" style="width: 450px; max-width: 95vw;">
-            <div class="title-bar">
-                <div class="title-bar-text">Experience.doc - WordPad</div>
-                <button aria-label="Close" class="close-btn" data-target="experience-window">X</button>
-            </div>
-            <div class="window-body text-body"
-                style="max-height: 400px; height: 60vh; overflow-y: auto; overflow-x: hidden; padding-right: 15px;">
-                <p style="margin-bottom: 5px;"><strong>Software Engineer</strong><br>GRC Board – Jakarta, Indonesia
-                    <br><span style="color: #555;">05/2025 – Current</span>
-                </p>
-                <ul style="margin-left: 20px; font-size: 0.85rem; margin-bottom: 15px;">
-                    <li>Architected and developed ERP application using MAUI Blazor Hybrid, leveraging a single codebase
-                        to
-                        deliver a consistent user experience across Android, iOS, Windows, and macOS.</li>
-                    <li>Develop modular UI components using Razor and CSS/Sass, ensuring the ERP interface remained
-                        responsive and accessible across various device form factors.</li>
-                    <li>R&D on the MAUI framework to solve complex performance bottlenecks and hardware integration
-                        challenges for enterprise users.</li>
-                    <li>Collaborated with back-end teams to consume RESTful APIs, ensuring secure and real-time data
-                        synchronization for critical business modules.</li>
-                </ul>
-
-                <p style="margin-bottom: 5px;"><strong>Software Engineer</strong><br>Bank Mandiri – Jakarta, Indonesia
-                    <br><span style="color: #555;">06/2023 - 05/2025</span>
-                </p>
-                <ul style="margin-left: 20px; font-size: 0.85rem; margin-bottom: 15px;">
-                    <li>Develop front-end interfaces for flagship financial products including Livin KPR and Livin
-                        Autoloan,
-                        focusing on user retention and smooth application workflows.</li>
-                    <li>Optimized API integration between the front-end and back-end services, reducing latency and
-                        improving the overall responsiveness of the mobile-web hybrid environment.</li>
-                    <li>Develop a dedicated web application to support the Livin Merchant Android app, utilizing Asp.Net
-                        Web
-                        Form and Vanilla JS to manage merchant app features and analytics.</li>
-                </ul>
-
-                <p style="margin-bottom: 5px;"><strong>Front End Developer</strong><br>NTT Indonesia Technology –
-                    Jakarta,
-                    Indonesia <br><span style="color: #555;">11/2018 – 10/2022</span></p>
-                <ul style="margin-left: 20px; font-size: 0.85rem; margin-bottom: 15px;">
-                    <li>Develop responsive front-end architectures project myCore Bca and myPartner Bca using the
-                        Angular
-                        framework, successfully translating complex UI/UX designs into high-performance,
-                        production-ready
-                        code.</li>
-                    <li>Streamlined data flow by collaborating with back-end teams to integrate UI components with
-                        secure
-                        APIs and databases, ensuring seamless synchronization with the Bank BCA ecosystem.</li>
-                    <li>Utilized HTML, SCSS, and TypeScript to create visually appealing and responsive web pages that
-                        met
-                        client requirements.</li>
-                </ul>
-
-                <p style="margin-bottom: 5px;"><strong>Front End Developer</strong><br>Tujuh Sembilan, Bandung,
-                    Indonesia
-                    <br><span style="color: #555;">05/2018 – 10/2018</span>
-                </p>
-                <ul style="margin-left: 20px; font-size: 0.85rem; margin-bottom: 10px;">
-                    <li>Bootcamp about understanding algorithms, database relations, java programing language and
-                        Angular
-                        Framework.</li>
-                    <li>Participate in working on the Human resource management system project of PT. Tujuh Sembilan
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Start Menu -->
-        <div id="start-menu" class="hidden">
-            <div class="start-menu-sidebar">
-                <span>Windows 95</span>
-            </div>
-            <div class="start-menu-items">
-                <div class="menu-item" data-target="about-window">
-                    <img src="assets/images/icons/notepad-icon.png" alt="About" class="menu-icon-img">
-                    <span>About.txt</span>
-                </div>
-                <div class="menu-item" data-target="projects-window">
-                    <img src="assets/images/icons/folder-icon.png" alt="Projects" class="menu-icon-img">
-                    <span>Programs</span>
-                </div>
-                <div class="menu-item" data-target="contact-window">
-                    <img src="assets/images/icons/phone-icon.png" alt="Contact" class="menu-icon-img">
-                    <span>Contact.exe</span>
-                </div>
-                <div class="menu-item" data-target="experience-window">
-                    <img src="assets/images/icons/notepad-icon.png" alt="Experience" class="menu-icon-img">
-                    <span>Experience.doc</span>
-                </div>
-                <hr class="menu-separator">
-                <div class="menu-item" id="menu-shutdown">
-                    <div class="menu-icon">⏻</div>
-                    <span>Shut Down...</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Taskbar Bawah -->
-    </main>
+    <!-- Taskbar Bawah -->
     <footer class="taskbar">
         <button class="start-btn">
-            <img src="https://img.icons8.com/fluent/1200/windows-95.jpg" alt="Windows 95 Logo" class="win-logo">
-            Start
+            <img src="https://img.icons8.com/fluent/1200/windows-95.jpg" alt="Windows 95 Logo" class="win-logo"> Start
         </button>
         <div class="taskbar-time">
             <span id="clock">12:00 PM</span>
